@@ -11,13 +11,10 @@ namespace Core.Service
 
             foreach (var input in inputs)
             {
-                results.Add(GetResult(input));
+                results.Add(QuadraticEquationSolver.Resolve(input));
             }
 
             return results;
         }
-
-        private static Result GetResult(Input input) =>
-            QuadraticEquationSolver.Resolve(input);
     }
 }

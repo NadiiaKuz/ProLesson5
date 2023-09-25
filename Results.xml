@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Results>
+  <Result Message="No roots">
+    <Input>
+      <A>1</A>
+      <B>3</B>
+      <C>5</C>
+    </Input>
+    <Root1>0</Root1>
+    <Root2>0</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>1</A>
+      <B>-8</B>
+      <C>5</C>
+    </Input>
+    <Root1>7.3166247903554</Root1>
+    <Root2>0.6833752096446002</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>6</A>
+      <B>11</B>
+      <C>-35</C>
+    </Input>
+    <Root1>60</Root1>
+    <Root2>-126</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>2</A>
+      <B>-4</B>
+      <C>-2</C>
+    </Input>
+    <Root1>9.65685424949238</Root1>
+    <Root2>-1.6568542494923806</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>1</A>
+      <B>-1</B>
+      <C>-3</C>
+    </Input>
+    <Root1>2.302775637731995</Root1>
+    <Root2>-1.3027756377319946</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>5</A>
+      <B>-2</B>
+      <C>-9</C>
+    </Input>
+    <Root1>38.91164991562634</Root1>
+    <Root2>-28.91164991562634</Root2>
+  </Result>
+  <Result Message="No roots">
+    <Input>
+      <A>3</A>
+      <B>4</B>
+      <C>2</C>
+    </Input>
+    <Root1>0</Root1>
+    <Root2>0</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>20</A>
+      <B>-15</B>
+      <C>-10</C>
+    </Input>
+    <Root1>470.1562118716424</Root1>
+    <Root2>-170.15621187164243</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>-4</A>
+      <B>-7</B>
+      <C>12</C>
+    </Input>
+    <Root1>-45.04834939252005</Root1>
+    <Root2>17.04834939252005</Root2>
+  </Result>
+  <Result Message="Two roots">
+    <Input>
+      <A>-1</A>
+      <B>6</B>
+      <C>18</C>
+    </Input>
+    <Root1>-2.196152422706632</Root1>
+    <Root2>8.196152422706632</Root2>
+  </Result>
+</Results>

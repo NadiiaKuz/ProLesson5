@@ -1,6 +1,6 @@
 ﻿namespace Lib.Models
 {
-    public class Input
+    public readonly struct Input
     {
         public double A { get; }
         public double B { get; }

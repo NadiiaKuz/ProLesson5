@@ -1,6 +1,6 @@
 ﻿namespace Lib.Models
 {
-    public class Result
+    public struct Result
     {
         public string Message { get; set; }
         public Input Input { get; set; }

@@ -11,7 +11,7 @@ namespace Core
             var inputs = DataProvider.GetInputs();
             var results = EquationService.GetResults(inputs);
 
-            var filePath = "d:\\Results.xml";
+            var filePath = "..//..//..//..//Results.xml";
 
             XMLHelper.CreateXmlFile(results, filePath);
         }

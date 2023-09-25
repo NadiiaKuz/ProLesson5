@@ -7,14 +7,25 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            XDocument bench = XDocument.Load("d:\\Results.xml");
-
-            var results = bench.Root.Elements().Where(x => x.Attribute("Message").Value == "Two roots")
-                .Select(x => $"x1 = {x.Element("Root1").Value} , x2 = {x.Element("Root2").Value}");
-
-            foreach (var result in results)
+            try
             {
-                Console.WriteLine(result);
+                XDocument bench = XDocument.Load("..//..//..//..//Results.xml");
+
+                var results = bench.Root?.Elements().Where(x => x.Attribute("Message")?.Value == "Two roots")
+                    .Select(x => $"x1 = {x.Element("Root1")?.Value} , x2 = {x.Element("Root2")?.Value}");
+
+                foreach (var result in results)
+                {
+                    Console.WriteLine(result);
+                }
+            } 
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine($"File not found. {e.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error with file. {ex.Message}");
             }
         }
     }
