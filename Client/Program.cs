@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using Core.XML;
+using Lib.Enum;
 using System.Xml.Linq;
 
 namespace Client
@@ -11,8 +12,8 @@ namespace Client
             {
                 XDocument bench = XDocument.Load("..//..//..//..//Results.xml");
 
-                var results = bench.Root?.Elements().Where(x => x.Attribute("Message")?.Value == "Two roots")
-                    .Select(x => $"x1 = {x.Element("Root1")?.Value} , x2 = {x.Element("Root2")?.Value}");
+                var results = bench.Root?.Elements().Where(x => x.Attribute(XMLConst.Message)?.Value == MessageType.TwoRoots.ToString())
+                    .Select(x => $"x1 = {x.Element(XMLConst.Root1)?.Value} , x2 = {x.Element(XMLConst.Root2)?.Value}");
 
                 foreach (var result in results)
                 {

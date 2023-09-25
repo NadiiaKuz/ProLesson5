@@ -1,4 +1,5 @@
-﻿using Lib.Models;
+﻿using Lib.Enum;
+using Lib.Models;
 
 namespace Lib
 {
@@ -17,18 +18,18 @@ namespace Lib
             {
                 result.Root1 = (-input.B + Math.Sqrt(discriminant)) / 2 * input.A;
                 result.Root2 = (-input.B - Math.Sqrt(discriminant)) / 2 * input.A;
-                result.Message = "Two roots";
+                result.Message = MessageType.TwoRoots;
                 return result;
             }
 
             if (discriminant == 0)
             {
                 result.Root1 = -input.B / 2 * input.A;
-                result.Message = "One root";
+                result.Message = MessageType.OneRoot;
                 return result;
             }
 
-            result.Message = "No roots";
+            result.Message = MessageType.NoRoots;
             return result;
         }
 
